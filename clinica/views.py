@@ -15,6 +15,6 @@ def prueba(request):
     return render(request, 'template/clinica/home.html', contexto)
 
 def test(request):
-    lista=[ "Lasaña", "Porotos"]
+    lista = [ "Lasaña", "Porotos", "Lentejas"]
     contexto = {"especialidad": "Medicina general", "comidas": lista}
     return render(request, 'template/clinica/home.html', contexto)

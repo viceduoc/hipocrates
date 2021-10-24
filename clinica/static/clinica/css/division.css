@@ -1,3 +1,9 @@
 .line-division{
     background-color: #e3f2fd;
+    height: 10px;
+}
+
+.size-logo{
+    height: 80px;
+    width: 80px;
 }
