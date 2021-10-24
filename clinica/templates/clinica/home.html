@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link css line-division -->
+    <link rel="stylesheet" href="{% static 'clinica/css/division.css' %}">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -55,7 +57,7 @@
     </nav>
     <!-- End Nav -->
     <div class="container">
-        <h1>Contenido</h1>
+        <h1>Contenido de prueba</h1>
         <p>agregando variable</p>
         <p>{{contexto.especialidad}}</p>
 
@@ -65,7 +67,14 @@
         <p>{{li}}</p>
         {% endfor %}
     </div>
-    <hr>
+    <div class="container-fluid" style="padding-bottom: 20px;">
+        <div class="col line-division" 
+        style="background-color: #e3f2fd; 
+        height: 10px;">
+
+        </div>
+    </div>
+    
 
     <div class="container">
         <form>
