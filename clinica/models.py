@@ -20,9 +20,9 @@ class Especialidad(models.Model):
 class Funcionario(models.Model):
     idFuncionario = models.IntegerField(primary_key=True,verbose_name="ID funcionario")
     rut = models.CharField(max_length=12, verbose_name="rut funcionario")
-    nombre = models.CharField(max_length="80", verbose_name="nombre funcionario")
-    correo = models.CharField(max_length="60", verbose_name="email funcionario")
-    password =models.CharField(max_length="8", min_leng2ht="8", verbose_name="password")
+    nombre = models.CharField(max_length=80, verbose_name="nombre funcionario")
+    correo = models.CharField(max_length=60, verbose_name="email funcionario")
+    password =models.CharField(max_length=8, verbose_name="password")
     debe_actualizar = models.BooleanField(verbose_name="contraseña provisoria")
     especialidad = models.ForeignKey(Especialidad, on_delete=models.CASCADE)
     tipoFuncionario = models.ForeignKey(TipoFuncionario,on_delete=models.CASCADE)
