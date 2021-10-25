@@ -62,31 +62,42 @@
         </div>
         <div class="col-5" style="text-align: center; padding-top: 10px;">
             <p> Salud mas cerca de tí</p>
-        </div >
-        <div class="col-4" style=" text-align: center; padding-top: 10px;">
-            <p >{{reserva}}</p>
         </div>
-      
+        <div class="col-4" style=" text-align: center; padding-top: 10px;">
+            <p>{{reserva}}</p>
+        </div>
+
     </div>
     <div class="container-fluid" style="padding-bottom: 20px;">
         <div class="col line-division">
             <!-- es solo linea de division -->
         </div>
     </div>
-    <div class="card container">
-        <h5 class="card-header">Featured</h5>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div><br>
-    <div class="card container">
-        <h5 class="card-header">Featured</h5>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- Cards -->
+    <div class="container col">
+        <div class="card-group">
+            <div class="card">
+                <img src="{% static 'clinica/img/card-reserva-hora.jpg' %}" class="card-img-top img-card" alt="Reserva">
+                <div class="card-body">
+                    <h5 class="card-title">Reservas de horas médicas</h5>
+                    <p class="card-text">Puedes reservar la atención que necesitas</p>
+                    <a href="#" class="btn btn-primary">Ir a reservar</a>
+                </div>
+            </div>
+            <div class="card">
+                <h1><pre> Selecciona una de
+        las alternativas</pre></h1>
+            </div>
+            <div class="card">
+                <img src="{% static 'clinica/img/ver-reserva.jpg' %}" class="card-img-top img-card" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ver reservas</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="#" class="btn btn-primary">Ver reservas</a>
+                </div>
+            </div>
         </div>
     </div>
 
