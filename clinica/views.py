@@ -5,25 +5,24 @@ from django.shortcuts import render
 
 
 def home(request):
-    contexto = {
-        "especialidad": "Medicina general"
-    }
-    return render(request, 'clinica/home.html',contexto)
-
-  
-
-
-
-
-
-
-
-def test(request):
     lista = [ "Lasaña", "Porotos", "Lentejas"]
-    contexto = {"especialidad": "Medicina general", "comidas": lista}
-    return render(request, 'template/clinica/home.html', contexto)
+    gui = {
+        "home":"Esta en Home",
+        "especialidad": "Medicina general", 
+        "comidas": lista
+        }
+    
+    return render(request, 'clinica/home.html',gui)
 
-
+ 
 
 def reserva(request):
-    return render(request, 'clinica/reserva.html')
+    lista = [
+         "Lasaña", "Porotos", "Lentejas"
+         ]
+    gui = {
+        "reserva":"Esta en Reserva de horas",
+        "especialidad": "Medicina general",
+        "comidas": lista
+     }
+    return render(request, 'clinica/reserva.html', gui)

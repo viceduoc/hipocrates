@@ -9,4 +9,10 @@
 }
 .descrip-hipo{
     font-family: 'Lobster', cursive;
+    display: inline-flex;
 }
+
+.location-page{
+    float: right;
+}
+
