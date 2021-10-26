@@ -51,6 +51,23 @@
         </div>
     </nav>
     <!-- End Nav -->
+    <div class="container descrip-hipo col-12">
+        <div class="col-3">
+            <h1 class=" h1">Clinica Hipocrates</h1>
+        </div>
+        <div class="col-5" style="text-align: center; padding-top: 10px;">
+            <p> Salud mas cerca de tí</p>
+        </div>
+        <div class="col-4" style=" text-align: center; padding-top: 10px;">
+            <p>{{crearReserva}}</p>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="padding-bottom: 20px;">
+        <div class="col line-division">
+            <!-- es solo linea de division -->
+        </div>
+    </div>
     <!-- Reservas -->
 
 <div class="container-fluid">
@@ -97,6 +114,19 @@
 
 
 </div>
+<!-- footer -->
+<footer class="text-center text-gray  fixed-bottom" style="background-color: #e3f2fd;">
+    <!-- Grid container -->
+    <!-- <div class="container p-4"></div> -->
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #e3f2fd;">
+        © 2021 Copyright:
+        <a class="text-gray" href="{%url 'home' %}">clinicaHipocrates.cl</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="{% static 'clinica/js/reservas.js' %}"></script>

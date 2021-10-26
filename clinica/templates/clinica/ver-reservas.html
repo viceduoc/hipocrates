@@ -1,5 +1,7 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,9 +26,10 @@
         crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-     <!-- Inicio nav -->
-     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
+    <!-- Inicio nav -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
         <div class="container-fluid">
             <a class="navbar-brand" href="">
                 <img src="{% static 'clinica/img/hipo_500X500.png' %}" alt="Hipocrates" class="size-logo"></img>
@@ -54,44 +57,75 @@
         </div>
     </nav>
     <!-- End Nav -->
-    
+    <div class="container descrip-hipo col-12">
+        <div class="col-3">
+            <h1 class=" h1">Clinica Hipocrates</h1>
+        </div>
+        <div class="col-5" style="text-align: center; padding-top: 10px;">
+            <p> Salud mas cerca de tí</p>
+        </div>
+        <div class="col-4" style=" text-align: center; padding-top: 10px;">
+            <p>{{verReserva}}</p>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="padding-bottom: 20px;">
+        <div class="col line-division">
+            <!-- es solo linea de division -->
+        </div>
+    </div>
+
     <div class="container mt-5">
         <h1 class="text-center my-5">Reservas</h1>
     </div>
     <section class="container">
-    <table class="table">
-        <thead class="bg-primary text-white">
-          <tr>
-            <th scope="col">Especialidad</th>
-            <th scope="col">Doctor</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Hora</th>
-            <th scope="col"> Modificación</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Traumatología</td>
-            <td>José Nuñez</td>
-            <td>16-11-2021</td>
-            <td>16:30</td>
-            <td><button type="button" class="btn btn-outline-danger rounded-pill">Anular</button></td>
-          </tr>
-          <tr>
-            <td>Cardiólogo</td>
-            <td>Juan Pinto</td>
-            <td>12-12-2021</td>
-            <td>11:00</td>
-            <td><button type="button" class="btn btn-outline-danger rounded-pill">Anular</button></td>
-          </tr>
-        </tbody>
-      </table>
-      
+        <table class="table">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Doctor</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col"> Modificación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Traumatología</td>
+                    <td>José Nuñez</td>
+                    <td>16-11-2021</td>
+                    <td>16:30</td>
+                    <td><button type="button" class="btn btn-outline-danger rounded-pill">Anular</button></td>
+                </tr>
+                <tr>
+                    <td>Cardiología</td>
+                    <td>Juan Pinto</td>
+                    <td>12-12-2021</td>
+                    <td>11:00</td>
+                    <td><button type="button" class="btn btn-outline-danger rounded-pill">Anular</button></td>
+                </tr>
+            </tbody>
+        </table>
+
     </section>
 
     <div class="container mt-5">
-        <button type="button" class="btn btn-warning">Volver</button>
+        <a type="button" href="{% url 'reserva'%}" class="btn btn-warning">Volver</a>
     </div>
-    
+    <!-- footer -->
+    <footer class="text-center text-gray  fixed-bottom" style="background-color: #e3f2fd;">
+        <!-- Grid container -->
+        <!-- <div class="container p-4"></div> -->
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #e3f2fd;">
+            © 2021 Copyright:
+            <a class="text-gray" href="{%url 'home' %}">clinicaHipocrates.cl</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
 </body>
+
 </html>

@@ -31,10 +31,19 @@ def reserva(request):
 def crearreserva(request):
     lista = [ "Lasaña", "Porotos", "Lentejas"]
     gui = {
-        "home":"Esta en Home",
+        "crearReserva":"Esta en Crear Reservas",
         "especialidad": "Medicina general", 
         "comidas": lista
         }
     
     return render(request, 'clinica/crear-reserva.html',gui)
 
+def verreserva(request):
+    lista = [ "Lasaña", "Porotos", "Lentejas"]
+    gui = {
+        "verReserva":"Esta en Ver Reservas",
+        "especialidad": "Medicina general", 
+        "comidas": lista
+        }
+    
+    return render(request, 'clinica/ver-reservas.html',gui)
