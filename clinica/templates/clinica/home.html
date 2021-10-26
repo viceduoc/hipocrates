@@ -62,11 +62,11 @@
         </div>
         <div class="col-5" style="text-align: center; padding-top: 10px;">
             <p> Salud mas cerca de tí</p>
-        </div >
-        <div class="col-4" style=" text-align: center; padding-top: 10px;">
-            <p >{{home}}</p>
         </div>
-      
+        <div class="col-4" style=" text-align: center; padding-top: 10px;">
+            <p>{{home}}</p>
+        </div>
+
     </div>
     <div class="container-fluid" style="padding-bottom: 20px;">
         <div class="col line-division">
@@ -75,7 +75,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" id="credencials">
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -87,10 +87,23 @@
                     <input type="password" class="form-control" id="inputPassword4">
                 </div>
             </div>
-
-            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <a href="{% url 'reserva'%}" type="button submit" class="btn btn-primary">Ingresar</a>
+            <!-- <button type="submit" class="btn btn-primary" >Ingresar</button> -->
         </form>
     </div>
+
+    <footer class="text-center text-gray  fixed-bottom" style="background-color: #e3f2fd;">
+        <!-- Grid container -->
+        <div class="container p-4"></div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #e3f2fd;">
+            © 2021 Copyright:
+            <a class="text-gray" href="{%url 'home' %}">clinicaHipocrates.cl</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>

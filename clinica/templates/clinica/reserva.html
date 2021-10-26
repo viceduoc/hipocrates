@@ -78,7 +78,7 @@
         <div class="card-deck">
             <div class="card">
                 <img src="{% static 'clinica/img/card-reserva-hora.jpg' %}" class="card-img-top img-card"
-                    style="height: 400px;" alt= Reserva">
+                    style="height: 300px; width: 300px; align-self: center;" alt= Reserva">
                 <div class="card-body">
                     <h5 class="card-title">Reservas de horas médicas</h5>
                     <p class="card-text">Puedes reservar la atención que necesitas</p>
@@ -87,23 +87,34 @@
             </div>
             <div class="card">
                 <h1>
-                    <pre> Selecciona una de
-        las alternativas</pre>
+                    <p style="text-align: center;"> Selecciona una de las alternativas</p>
                 </h1>
             </div>
             <div class="card">
                 <img src="{% static 'clinica/img/ver-reserva.jpg' %}" class="card-img-top img-card"
-                style="height: 400px;" alt="...">
+                style="height: 300px; width: 300px; align-self: center;" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Ver reservas</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    <h5 class="card-title">Ver reservas de horas médicas</h5>
+                    <p class="card-text">Puedes ver tus reservas
                     </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     <a href="#" class="btn btn-primary">Ver reservas</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- footer -->
+    <footer class="text-center text-gray  fixed-bottom" style="background-color: #e3f2fd;">
+        <!-- Grid container -->
+        <div class="container p-4"></div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #e3f2fd;">
+            © 2021 Copyright:
+            <a class="text-gray" href="{%url 'home' %}">clinicaHipocrates.cl</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 </body>
 
