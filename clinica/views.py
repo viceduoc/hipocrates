@@ -1,20 +1,49 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render
 
 
 # Create your views here.
 
 
 def home(request):
-    return render(request, 'clinica/home.html')
+    lista = [ "Lasaña", "Porotos", "Lentejas"]
+    gui = {
+        "home":"Esta en Home",
+        "especialidad": "Medicina general", 
+        "comidas": lista
+        }
+    
+    return render(request, 'clinica/home.html',gui)
 
+ 
 
-def prueba(request):
-    contexto = {
-        "especialidad": "Medicina general"
-    }
-    return render(request, 'template/clinica/home.html', contexto)
+def reserva(request):
+    lista = [
+         "Lasaña", "Porotos", "Lentejas"
+         ]
+    gui = {
+        "reserva":"Esta en Reserva de horas",
+        "especialidad": "Medicina general",
+        "comidas": lista
+     }
+    return render(request, 'clinica/reserva.html', gui)
 
-def test(request):
-    lista=[ "Lasaña", "Porotos"]
-    contexto = {"especialidad": "Medicina general", "comidas": lista}
-    return render(request, 'template/clinica/home.html', contexto)
+    
+def crearreserva(request):
+    lista = [ "Lasaña", "Porotos", "Lentejas"]
+    gui = {
+        "crearReserva":"Esta en Crear Reservas",
+        "especialidad": "Medicina general", 
+        "comidas": lista
+        }
+    
+    return render(request, 'clinica/crear-reserva.html',gui)
+
+def verreserva(request):
+    lista = [ "Lasaña", "Porotos", "Lentejas"]
+    gui = {
+        "verReserva":"Esta en Ver Reservas",
+        "especialidad": "Medicina general", 
+        "comidas": lista
+        }
+    
+    return render(request, 'clinica/ver-reservas.html',gui)

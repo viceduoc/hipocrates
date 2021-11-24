@@ -1,3 +1,26 @@
-.line-division{
-    background-color: #e3f2fd;
+.line-division {
+  background-color: #e3f2fd;
+  height: 10px;
+}
+
+.size-logo {
+  height: 80px;
+  width: 80px;
+}
+.descrip-hipo {
+  font-family: "Lobster", cursive;
+  display: inline-flex;
+}
+
+.location-page {
+  float: right;
+}
+
+.img-card {
+  height: 500px;
+}
+
+.ajuste {
+  box-sizing: content-box;
+  width: 100%;
 }
